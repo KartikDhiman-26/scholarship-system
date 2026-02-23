@@ -10,7 +10,7 @@ const Status = () => {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:5000/api/applications/my",
+          "https://scholarship-system-mw24.onrender.com/api/applications/my",
           {
             headers: {
               Authorization: `Bearer ${token}`,

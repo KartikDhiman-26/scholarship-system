@@ -22,7 +22,7 @@ const Register = () => {
       const token = await userCredential.user.getIdToken();
 
       await axios.post(
-        "http://localhost:5000/api/users",
+        "https://scholarship-system-mw24.onrender.com/api/users",
         { role: "student" },
         {
           headers: {

@@ -9,7 +9,7 @@ const AdminDashboard = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/applications",
+        "https://scholarship-system-mw24.onrender.com/api/applications",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -27,7 +27,7 @@ const AdminDashboard = () => {
     const token = localStorage.getItem("token");
 
     await axios.put(
-      `http://localhost:5000/api/applications/${id}`,
+      `https://scholarship-system-mw24.onrender.com/api/applications/${id}`,
       { status },
       {
         headers: {

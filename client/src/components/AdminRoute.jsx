@@ -10,7 +10,7 @@ const AdminRoute = ({ children }) => {
       try {
         const token = localStorage.getItem("token");
 
-        await axios.get("http://localhost:5000/api/applications", {
+        await axios.get("https://scholarship-system-mw24.onrender.com/api/applications", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
